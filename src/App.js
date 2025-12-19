@@ -26,18 +26,21 @@ function App() {
     return arr;
   };
   const sites = [
-    ["n1", 2],
-    ["n4", 2],
-    ["n5", 6],
-    ["n6", 5],
-    ["n7", 2],
-    ["n8", 3],
-    ["n10", 3],
-    ["n12", 3],
-    ["n14", 6],
-    ["n16", 2],
-    ["n17", 2],
-    ["n19", 2],
+    ["veslec", 2],
+    ["biser", 2],
+    ["banishora", 2],
+    ["mladost", 2],
+    ["svtroica", 2],
+    ["ovkupel", 2],
+    ["geomilev", 2],
+    ["pirin", 2],
+    ["pirogov", 2],
+    ["gorublqne", 2],
+    ["reduta", 2],
+    ["boqna", 2],
+    ["sitnqkovo", 2],
+    ["izgrev", 2],
+    ["smirnenski", 2],
   ];
   const generateDash = () => {
     // const arr = [];
@@ -63,53 +66,65 @@ function App() {
         <Route path="/dash" element={<DashHome />}>
           {generateDash()}
         </Route>
-        <Route path="/n1" element={<Main kasi="2" obekt="n1" />}>
-          {generateRoutes(2, "Н1")}
-          <Route path="total" element={<TotalProtocol obekt="Н1" />} />
+        <Route path="/veslec" element={<Main kasi="2" obekt="veslec" />}>
+          {generateRoutes(2, "ВЕСЛЕЦ")}
+          <Route path="total" element={<TotalProtocol obekt="ВЕСЛЕЦ" />} />
         </Route>
-        <Route path="/n4" element={<Main kasi="2" obekt="n4" />}>
-          {generateRoutes(2, "Н4")}
-          <Route path="total" element={<TotalProtocol obekt="Н4" />} />
+        <Route path="/lozenec" element={<Main kasi="2" obekt="lozenec" />}>
+          {generateRoutes(2, "БИСЕР")}
+          <Route path="total" element={<TotalProtocol obekt="БИСЕР" />} />
         </Route>
-        <Route path="/n5" element={<Main kasi="10" obekt="n5" />}>
-          {generateRoutes(10, "Н5")}
-          <Route path="total" element={<TotalProtocol obekt="Н5" />} />
+        <Route path="/banishora" element={<Main kasi="2" obekt="banishora" />}>
+          {generateRoutes(2, "БАНИШОРА")}
+          <Route path="total" element={<TotalProtocol obekt="БАНИШОРА" />} />
         </Route>
-        <Route path="/n6" element={<Main kasi="5" obekt="n6" />}>
-          {generateRoutes(5, "Н6")}
-          <Route path="total" element={<TotalProtocol obekt="Н6" />} />
+        <Route path="/mladost" element={<Main kasi="3" obekt="mladost" />}>
+          {generateRoutes(3, "МЛАДОСТ")}
+          <Route path="total" element={<TotalProtocol obekt="МЛАДОСТ" />} />
         </Route>
-        <Route path="/n7" element={<Main kasi="2" obekt="n7" />}>
-          {generateRoutes(2, "Н7")}
-          <Route path="total" element={<TotalProtocol obekt="Н7" />} />
+        <Route path="/svtroica" element={<Main kasi="2" obekt="svtroica" />}>
+          {generateRoutes(2, "СВ. ТРОИЦА")}
+          <Route path="total" element={<TotalProtocol obekt="СВ. ТРОИЦА" />} />
         </Route>
-        <Route path="/n8" element={<Main kasi="3" obekt="n8" />}>
-          {generateRoutes(3, "Н8")}
-          <Route path="total" element={<TotalProtocol obekt="Н8" />} />
+        <Route path="/ovkupel" element={<Main kasi="2" obekt="ovkupel" />}>
+          {generateRoutes(2, "ОВ. КУПЕЛ")}
+          <Route path="total" element={<TotalProtocol obekt="ОВ. КУПЕЛ" />} />
         </Route>
-        <Route path="/n10" element={<Main kasi="3" obekt="n10" />}>
-          {generateRoutes(3, "Н10")}
-          <Route path="total" element={<TotalProtocol obekt="Н10" />} />
+        <Route path="/geomilev" element={<Main kasi="2" obekt="geomilev" />}>
+          {generateRoutes(2, "ГЕО МИЛЕВ")}
+          <Route path="total" element={<TotalProtocol obekt="ГЕО МИЛЕВ" />} />
         </Route>
-        <Route path="/n12" element={<Main kasi="3" obekt="n12" />}>
-          {generateRoutes(3, "Н12")}
-          <Route path="total" element={<TotalProtocol obekt="Н12" />} />
+        <Route path="/pirin" element={<Main kasi="3" obekt="pirin" />}>
+          {generateRoutes(3, "ПИРИН")}
+          <Route path="total" element={<TotalProtocol obekt="ПИРИН" />} />
         </Route>
-        <Route path="/n14" element={<Main kasi="6" obekt="n14" />}>
-          {generateRoutes(6, "Н14")}
-          <Route path="total" element={<TotalProtocol obekt="Н14" />} />
+        <Route path="/pirogov" element={<Main kasi="2" obekt="pirogov" />}>
+          {generateRoutes(2, "ПИРОГОВ")}
+          <Route path="total" element={<TotalProtocol obekt="ПИРОГОВ" />} />
         </Route>
-        <Route path="/n16" element={<Main kasi="2" obekt="n16" />}>
-          {generateRoutes(2, "Н16")}
-          <Route path="total" element={<TotalProtocol obekt="Н16" />} />
+        <Route path="/gorublqne" element={<Main kasi="2" obekt="gorublqne" />}>
+          {generateRoutes(2, "ГОРУБЛЯНЕ")}
+          <Route path="total" element={<TotalProtocol obekt="ГОРУБЛЯНЕ" />} />
         </Route>
-        <Route path="/n17" element={<Main kasi="2" obekt="n17" />}>
-          {generateRoutes(2, "Н17")}
-          <Route path="total" element={<TotalProtocol obekt="Н17" />} />
+        <Route path="/reduta" element={<Main kasi="2" obekt="reduta" />}>
+          {generateRoutes(2, "РЕДУТА")}
+          <Route path="total" element={<TotalProtocol obekt="РЕДУТА" />} />
         </Route>
-        <Route path="/n19" element={<Main kasi="2" obekt="n19" />}>
-          {generateRoutes(2, "Н19")}
-          <Route path="total" element={<TotalProtocol obekt="Н19" />} />
+        <Route path="/boqna" element={<Main kasi="2" obekt="boqna" />}>
+          {generateRoutes(2, "БОЯНА")}
+          <Route path="total" element={<TotalProtocol obekt="БОЯНА" />} />
+        </Route>
+        <Route path="/sitnqkovo" element={<Main kasi="2" obekt="sitnqkovo" />}>
+          {generateRoutes(2, "СИТНЯКОВО")}
+          <Route path="total" element={<TotalProtocol obekt="СИТНЯКОВО" />} />
+        </Route>
+        <Route path="/izgrev" element={<Main kasi="2" obekt="izgrev" />}>
+          {generateRoutes(2, "ИЗГРЕВ")}
+          <Route path="total" element={<TotalProtocol obekt="ИЗГРЕВ" />} />
+        </Route>
+        <Route path="/smirnenski" element={<Main kasi="2" obekt="smirnenski" />}>
+          {generateRoutes(2, "СМИРНЕНСКИ")}
+          <Route path="total" element={<TotalProtocol obekt="СМИРНЕНСКИ" />} />
         </Route>
       </Routes>
     

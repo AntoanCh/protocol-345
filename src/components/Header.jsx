@@ -4,14 +4,15 @@ import { useLocation, matchPath } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { styled } from "@mui/material/styles";
 import { deepOrange } from "@mui/material/colors";
+import { useAppState } from "./AppStateContext";
 
 
-import logo from "../static/dar_logo.jpg";
+import logo from "../static/magazin-345.png";
 
 function Header({ obekt, kasi, 
-  handleDial
+  // handleDial
  }) {
- 
+ const { state, handleCash, handleState, handleRef, handleDial, currency } = useAppState();
   //Custom tabs from material ui
   const CustomTabs = styled(Tabs)({
     borderBottom: "1px solid #e8e8e8",
@@ -103,8 +104,8 @@ function Header({ obekt, kasi,
     <div className="header">
       <div>
         <Badge
-          badgeContent={obekt.replace("n", "Н")}
-          color="success"
+          badgeContent={obekt}
+          color="warning"
           sx={{ top: "13px", left: "10px" }}
         >
           <Avatar

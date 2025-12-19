@@ -14,7 +14,7 @@ const { state, handleCash, handleState, handleRef, handleDial, currency } = useA
   
   //constructor function for generating all CashItem components needed
 
-  const cash = currency == "EUR" ?[500,200,100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01] :[100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01];
+  const cash = currency == "EUR" ?[100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01] :[100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01];
   const generateCashItems = () => {
     return cash.map((item, i) => {
       const index = inputIndexOffset  + i
@@ -48,7 +48,7 @@ return (
     <Box>
       <h3>Продажби в брой</h3>
       <Box id="totalCash" className="underline">
-        <input type="text" value={currency === "BGN" ? "Остатък едри(10 -100лв) :" :"Остатък едри(10 -500 €) :" } disabled></input>
+        <input type="text" value={currency === "BGN" ? "Остатък едри(10 -100лв) :" :"Остатък едри(10 -100 €) :" } disabled></input>
         <input type="text" disabled value={ostatak().toLocaleString("bg-BG", {
             style: "currency",
             currency: currency ,
